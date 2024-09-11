@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading two parameters</title>
+  </head>
+  <body>
+    <h2>Please fill out this form</h2>
+    <form
+      method="get"
+      action="http://localhost:8080/paramapp/firstservlet"
+      name="myform"
+    >
+      <section>
+        <h3>Personal Information</h3>
+        <p>
+          <label>Firstname</label>
+          <input type="text" name="firstname" />
+        </p>
+        <p>
+          <label>Surname</label>
+          <input type="text" name="surname" />
+        </p>
+      </section>
+      <section>
+        <h3>Salary Information</h3>
+        <input type="text" name="salary" />
+      </section>
+      <p>
+        <button type="submit" value="submit form">Submit Form</button>
+        <button type="reset" value="reset">Reset Form</button>
+      </p>
+    </form>
+  </body>
+</html>
